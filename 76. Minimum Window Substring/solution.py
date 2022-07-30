@@ -31,7 +31,6 @@ class Solution:
                     sCharCount[char]=sCharCount[char]-1   
                 print(char,self.isValidString(sCharCount,tCharCount))
                 start=start+1
-
             if(end>=len(s) or (ss==start and ee==end)):
                 break
         return ans
