@@ -4,7 +4,7 @@ class Solution:
         r = len(nums)-1
         while(l <= r):
             numIndex = (r+l)//2
-            print(numIndex, nums[numIndex], l, r)
+            # print(numIndex, nums[numIndex], l, r)
             if nums[numIndex] == target:
                 return numIndex
             elif nums[numIndex] < nums[r]:
