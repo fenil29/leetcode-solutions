@@ -13,6 +13,8 @@ class Solution:
         while(currP != p or currQ != q):
             if (currP == currQ):
                 ans = currP
+            else:
+                return ans
             if currP.val > p.val:
                 currP = currP.left
             elif currP.val < p.val:
