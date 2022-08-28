@@ -40,7 +40,9 @@ class Solution:
             return
         seen.add((i, j))
         currChar = board[i][j]
-        if currChar not in currTrie and "isEnd" in currTrie[currChar] and currTrie[currChar]["isEnd"]:
+        if currChar not in currTrie:
+            return
+        if "isEnd" in currTrie[currChar] and currTrie[currChar]["isEnd"]:
             ans.append(currWord+currChar)
             currTrie[currChar]["isEnd"] = False
             self.removeWord(trie, currWord+currChar)
